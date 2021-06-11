@@ -3,11 +3,74 @@
     margin:0;
     padding:0;
 }
+body{
+    height:auto;
+    width:100%;
+    
+}
 
 section{
-    width:100%;
+width:100%;
     height:100vh;
 }
 section:first-child{
-    background-image: url(images/)
+    background-image: url(images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+background-size:cover;
 }
+li{
+    display:inline-block;
+    padding:20px;
+font-size:20px;
+font-family: 'Barlow', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li .contact{
+    color:hsl(198, 62%, 26%);
+font-weight: 900;
+background-color: hsl(0, 0%, 100%);
+    border-radius:40px;
+    padding:15px 30px 15px 30px;
+}
+nav{
+    display:flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding:30px;
+    float:right;
+}
+
+.logo{
+    position:absolute;
+    top:40px;
+    left:40px;
+    width:10%;
+}
+
+h1, li .contact{
+    font-family: 'Fraunces', serif;
+}
+h1, a, .contact:hover{
+    color:hsl(0, 0%, 100%);
+}
+h1{
+    width:100%;
+    font-size: 85px;
+    letter-spacing:2px;
+top:30%;
+text-align:center;
+}
+
+h1::after{
+    content: url(images/icon-arrow-down.svg);
+   left:50%;
+  padding-top:220px;
+}
+
+h1, h1::after{
+    position:absolute;
+}
+.contact:hover{
+  background-color: hsl(212, 27%, 69%)
