@@ -22,26 +22,32 @@ li{
     display:inline-block;
     padding:20px;
 font-size:20px;
-font-family: 'Barlow', sans-serif;
+}
+li, p{
+    font-family: 'Barlow', sans-serif;
 }
 a{
     text-decoration: none;
 }
-li .contact{
+li .contact, h2{
     color:hsl(198, 62%, 26%);
+}
+li .contact{
+
 font-weight: 900;
 background-color: hsl(0, 0%, 100%);
     border-radius:40px;
     padding:15px 30px 15px 30px;
 }
 nav{
-    display:flex;
     justify-content: flex-end;
     width: 50%;
     padding:30px;
     float:right;
 }
-
+nav , .egg, .teksts{
+    display:flex;
+}
 .logo{
     position:absolute;
     top:40px;
@@ -49,7 +55,7 @@ nav{
     width:10%;
 }
 
-h1, li .contact{
+h1,h2, li .contact{
     font-family: 'Fraunces', serif;
 }
 h1, a, .contact:hover{
@@ -73,4 +79,111 @@ h1, h1::after{
     position:absolute;
 }
 .contact:hover{
-  background-color: hsl(212, 27%, 69%)
+  background-color:hsl(200, 100%, 82%);
+}
+nav img{
+    display:none;
+}
+
+.gallery{
+    height:auto;
+}
+.egg{
+   flex-direction:row;
+}
+.teksts, .image{
+    width:50%;
+    height:auto;
+}
+.image img{
+    width:100%;
+}
+.teksts{
+    flex-direction:column;
+justify-content: center;
+align-items: center;
+}
+p{
+    color:hsl(210, 4%, 67%);
+    line-height: 1.5;
+    font-size:22px;
+}
+h2{
+    font-size:55px;
+   padding-bottom:30px;
+}
+.teksts > div{
+width:60%;
+}
+@media screen and (min-width:300px) and (max-width:800px){
+    section{
+        width:100%;
+            height:90vh;
+        }
+        section:first-child{
+            background-image: url(images/mobile/image-header.jpg);
+            background-repeat: no-repeat;
+        background-size:100% 100%;
+        }
+        nav img{
+            display:block;
+        }
+        /*
+        li{
+            display:none;
+            padding:20px;
+        font-size:20px;
+        font-family: 'Barlow', sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        li .contact{
+            color:hsl(198, 62%, 26%);
+        font-weight: 900;
+        background-color: hsl(0, 0%, 100%);
+            border-radius:40px;
+            padding:15px 30px 15px 30px;
+        } */
+        nav{
+            display:flex;
+            justify-content: flex-end;
+            width: 50%;
+            padding:30px;
+            float:right;
+        }
+        
+        .logo{
+            position:absolute;
+            top:40px;
+            left:40px;
+            width:40%;
+        }
+        
+        h1,h2, li .contact{
+            font-family: 'Fraunces', serif;
+        }
+        h1, a, .contact:hover{
+            color:hsl(0, 0%, 100%);
+        }
+        h1{
+            width:100%;
+            font-size: 38px;
+            letter-spacing:2px;
+        top:20%;
+        text-align:center;
+        }
+        
+        h1::after{
+            content: url(images/icon-arrow-down.svg);
+           left:45%;
+          padding-top:120px;
+        }
+        
+        h1, h1::after{
+            position:absolute;
+        }
+        .contact:hover{
+          background-color:hsl(200, 100%, 82%);
+        }
+}
