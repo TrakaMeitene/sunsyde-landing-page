@@ -13,7 +13,7 @@ section{
 section:first-child{
     background-image: url(images/desktop/image-header.jpg);
     background-repeat: no-repeat;
-background-size:cover;
+    background-size: 100% 110%;
 }
 li{
     display:inline-block;
@@ -209,7 +209,6 @@ padding:100px 20px 0 0;
 .bildes{
     width:100%;
     height:auto;
-    flex-wrap: wrap;
 }
 .bildes img{
   width:50%;
@@ -424,7 +423,7 @@ span a{
         }
         h4{
             color:hsl(210, 4%, 67%);
-            font-size: 25px;
+            font-size: 20px;
             letter-spacing: 2px;
             padding-top:30px;
         }
@@ -458,5 +457,8 @@ span a{
         .block p:last-child{
             font-size:18px;
             padding-bottom:50px;
+        }
+        .bildes{
+            flex-wrap:wrap;
         }
 }
