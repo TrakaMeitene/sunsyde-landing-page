@@ -65,22 +65,22 @@ top:30%;
 text-align:center;
 }
 
-h1::after{
+.arrow{
     content: url(images/icon-arrow-down.svg);
    left:50%;
-  padding-top:220px;
-  animation: scroll 4s infinite;
+  padding-top:520px;
+
  
 }
 
 @keyframes scroll{
-    0% {padding-top:220px}
-50%{padding-top:440px}
-100%{padding-top:220px}
+    0% {padding-top:420px}
+50%{padding-top:840px}
+100%{padding-top:420px}
 
 }
 
-h1, h1::after{
+h1, .arrow{
     position:absolute;
 }
 .contact:hover{
@@ -339,10 +339,10 @@ display:none;
         text-align:center;
         }
         
-        h1::after{
+        .arrow{
             content: url(images/icon-arrow-down.svg);
-           left:45%;
-          padding-top:120px;
+           left:5%;
+          padding-top:180px;
         }
         
         h1, h1::after{
