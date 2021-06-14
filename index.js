@@ -8,7 +8,8 @@ var tr = document.getElementById("tr");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-   document.getElementById("anim").style.animation = "scroll 4s infinite";
+   document.getElementById("anim").style.animation = "scroll 6s, fade 6s";
+   
   } else {
     document.getElementById("anim").style.animation = "initial";
   }

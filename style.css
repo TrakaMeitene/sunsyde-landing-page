@@ -76,10 +76,14 @@ text-align:center;
 @keyframes scroll{
     0% {padding-top:420px}
 50%{padding-top:840px}
-100%{padding-top:420px}
+100%{padding-top:1020px}
 
 }
-
+@keyframes fade{
+    0% {opacity:1;}
+    50%{opacity:0.5}
+    100%{opacity:0}
+}
 h1, .arrow{
     position:absolute;
 }
