@@ -79,6 +79,7 @@ h1::after{
 100%{padding-top:220px}
 
 }
+
 h1, h1::after{
     position:absolute;
 }
@@ -219,7 +220,7 @@ padding:100px 20px 0 0;
     height:auto;
 }
 .bildes img{
-  width:50%;
+  width:25%;
   height:auto;
 }
 footer{
