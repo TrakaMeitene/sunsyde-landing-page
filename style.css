@@ -345,8 +345,9 @@ display:none;
         
         .arrow{
             content: url(images/icon-arrow-down.svg);
-           left:5%;
-          padding-top:180px;
+           left:45%;
+          padding-top:280px;
+     
         }
         
         h1, h1::after{
